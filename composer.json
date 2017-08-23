@@ -1,0 +1,16 @@
+{
+    "name": "gravity-forms-google-places",
+    "description": "Adds a Gravity Forms field type for autocompleting addresses using the Google Places API.",
+    "type": "wordpress-plugin",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Dave Bonds",
+            "homepage": "https://github.com/davebonds",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    }
+}
