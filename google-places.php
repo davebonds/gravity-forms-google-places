@@ -1,13 +1,20 @@
 <?php
 /**
-Plugin Name: Gravity Forms Google Places
-Description: Adds a Gravity Forms field type for autocompleting addresses using the Google Places API.
-Author: Dave Bonds
-Version: 1.0.0
-Author URI: http://www.agentevolution.com/
-License: GPL
-
-@package GFormsGooglePlaces
+ * @link              https://github.com/davebonds/
+ * @since             1.0.0
+ * @package           GFormsGooglePlaces
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Gravity Forms Google Places
+ * Plugin URI:        https://github.com/davebonds/gravity-forms-google-places
+ * Description:       Adds a Gravity Forms field type for autocompleting addresses using the Google Places API.
+ * Version:           1.0.0
+ * Author:            Dave Bonds
+ * Author URI:        https://github.com/davebonds/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       gforms-google-places
+ * Domain Path:       /languages
  */
 
 define( 'GF_GOOGLE_PLACES_ADDON_VERSION', '1.0.0' );

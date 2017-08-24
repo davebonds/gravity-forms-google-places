@@ -68,7 +68,7 @@ class GPlacesAddon extends GFAddOn {
 				$group['fields'][] = [
 					'class' => 'button',
 					'data-type' => self::$type,
-					'value' => 'Google Places',
+					'value' => __( 'Google Places', 'gforms-google-places' ),
 				];
 			}
 		}
@@ -83,7 +83,7 @@ class GPlacesAddon extends GFAddOn {
 	 */
 	public function field_title( $type ) {
 		if ( $type === self::$type ) {
-			return 'Google Places Lookup';
+			return __( 'Google Places Lookup', 'gforms-google-places' );
 		}
 	}
 
@@ -202,7 +202,7 @@ class GPlacesAddon extends GFAddOn {
 				'fields' => array(
 					array(
 						'name'              => 'gplaces-api',
-						'tooltip'           => esc_html__( 'This is for your Google Maps Javascript API Key. Your key can be found in the <a href="https://console.developers.google.com/apis/credentials/key/">Google API console &raquo; Credentials Tab</a>', 'gforms-google-places' ),
+						'tooltip'           => esc_html__( 'This is for your Google Maps Javascript API Key. Your key can be found in the <a href="https://console.developers.google.com/apis/credentials/key/" target="_blank">Google API console &raquo; Credentials Tab</a>', 'gforms-google-places' ),
 						'label'             => esc_html__( 'Google Maps JS API key', 'gforms-google-places' ),
 						'type'              => 'text',
 						'class'             => 'large',
@@ -221,7 +221,7 @@ class GPlacesAddon extends GFAddOn {
 	 * @return bool
 	 */
 	public function is_valid_setting( $value ) {
-		return strlen( $value ) > 20;
+		return strlen( $value ) > 30;
 	}
 
 }
